@@ -1,0 +1,23 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block titulohead %}
+    App - Bx
+{% endblock %}
+
+{% block titulo %}
+    Bx
+{% endblock %}
+
+{% block parrafo %}
+    Aquí podrás encontrar información sobre los boxeadores más importantes del ambito.
+{% endblock %}
+
+{% block botones %}
+    
+    <a style="border: solid 1px;" href="{% url 'boxeadorFormulario' %}" class="w3-bar-item w3-button w3-padding-large">Agregar Boxeador</a>
+    <a style="border: solid 1px;" href="{%url 'listarBoxeadores' %}" class="w3-bar-item w3-button w3-padding-large">Lista de Boxeadores</a>
+    <a style="border: solid 1px;" href="{%url 'boxeadoresBuscar' %}" class="w3-bar-item w3-button w3-padding-large">Buscar Boxeadores</a>
+
+{% endblock %}  

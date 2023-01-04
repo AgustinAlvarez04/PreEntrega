@@ -1,0 +1,27 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block titulohead %}
+    App - Buscar Boxeadores
+{% endblock %}
+
+{% block titulo %}
+    BUSCAR BOXEADORES
+{% endblock %}
+
+{% block parrafo %}
+    Ingresa el nombre del boxeador que deseas encontrar.
+{% endblock %}
+
+{% block contenido %}
+    
+    <form action="{% url 'buscar_boxeador' %}" method="GET">
+
+        <input type="text" name="nombre" id="nombre" placeholder="INSERTE NOMBRE">
+
+        <input type="submit" value="Buscar Boxeador">
+
+    </form>
+    
+{% endblock %}

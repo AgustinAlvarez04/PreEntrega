@@ -1,0 +1,18 @@
+{% extends "App/padre.html" %}
+
+{% load static %}
+
+{% block titulohead %}
+    App - Boxeadores
+{% endblock %}
+
+{% block titulo %}
+    BOXEADOR
+{% endblock %}
+
+{% block botones %}
+    <a style="border: solid 1px;" href="{% url 'boxeadoresFormulario' %}" class="w3-bar-item w3-button w3-padding-large">Agregar</a>
+    <a style="border: solid 1px;" href="{%url 'listarBoxeadores' %}" class="w3-bar-item w3-button w3-padding-large">Lista</a>
+
+{% endblock %}
+
